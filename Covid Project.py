@@ -27,7 +27,6 @@ class main:
     ## Returns: top10Counties: (pd.DataFrame)- The dataframe with the top 10 counties in New York with the most Covid-19 cases.  
     def top10Counties() -> pd.DataFrame:
         # Input/Output Files are read here
-        # CHANGE THIS FILE PATH TO MATCH YOUR FILE'S PATH!!!
         data = pd.read_csv("NYcovidData.txt")
         data.columns = ["Case ID", "Gender", "Age", "County"]
 
